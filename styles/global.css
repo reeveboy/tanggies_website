@@ -1,7 +1,27 @@
-.body {
+body {
   font-family: "Work Sans", sans-serif;
 }
 
-/* body {
-  font-family: "KoHo", sans-serif;
-} */
+/* Scroll Wheel Css -------------------> Start */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.308);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.363);
+}
+/* Scroll Wheel Css -------------------> End */
