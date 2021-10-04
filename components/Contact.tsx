@@ -5,8 +5,8 @@ import ClockCard from "./Cards/ClockCard";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col bg-white h-80 w-80 rounded-lg">
-      <div className="flex justify-center items-center bg-new_yellow h-16 rounded-t-lg">
+    <div className="flex flex-col bg-white w-80 rounded-lg md:w-96 md:h-96">
+      <div className="flex justify-center items-center bg-new_yellow rounded-t-lg p-2">
         <div className="rounded-full bg-white w-12 h-12 flex justify-center items-center">
           <img
             src="/svgs/contact.svg"
@@ -16,10 +16,14 @@ const Contact = () => {
           />
         </div>
       </div>
-      <div className="h-full px-4 py-2 flex flex-col justify-around">
+      <div className="p-4 flex flex-col justify-around">
         <PhoneCard />
-        <LocationCard />
-        <ClockCard />
+        <div className="mt-4">
+          <LocationCard />
+        </div>
+        <div className="mt-4">
+          <ClockCard />
+        </div>
       </div>
     </div>
   );

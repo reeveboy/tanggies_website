@@ -2,6 +2,10 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+a {
+  font-family: "Work Sans", sans-serif;
+}
+
 /* Scroll Wheel Css -------------------> Start */
 ::-webkit-scrollbar {
   width: 6px;
@@ -25,3 +29,10 @@ body {
   background: rgba(0, 0, 0, 0.363);
 }
 /* Scroll Wheel Css -------------------> End */
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 5 rem;
+    line-height: 80%;
+  }
+}

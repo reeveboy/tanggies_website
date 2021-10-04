@@ -5,159 +5,192 @@ export default function Home() {
   return (
     <div className="">
       {/* Home */}
-      <div
-        className="p-4 flex flex-col items-center bg-tile_gray"
-        style={{ minHeight: "fit-content" }}>
-        <img
-          className="rounded-lg"
-          src="/images/steak.jpg"
-          alt=""
-          width="285 px"
-          height="310 px"
-        />
-        <span
-          className="block text-sand_stone text-5xl uppercase text-center leading-10 mt-5"
-          style={{ fontWeight: 900 }}>
-          Delicious <br />
-          Dinners
-        </span>
-        <span className="text-white text-center mt-2 px-3 text-sm leading-relaxed">
-          Our restaurant nests itself in this magical and hidden gem of South
-          Goa, “Tanggies” perfectly captures what we are all about and awhat our
-          restauarnt believes in. No one can survive this life by just being
-          sweet, you have to be spicy at times and a bit tangy at times as well
-          to make it through!
-        </span>
+      <div className="py-4 bg-tile_gray">
+        <div className="w-11/12 mx-auto flex flex-col items-center  md:flex-row-reverse">
+          <img
+            className="rounded-lg w-72 md:w-96"
+            src="/images/steak.jpg"
+            alt=""
+          />
+          <div className="flex flex-col items-center md:items-end md:ml-10 md:pr-4">
+            <span
+              className="block text-sand_stone text-5xl uppercase text-center leading-10 mt-5 md:text-right title"
+              style={{ fontWeight: 900 }}>
+              Delicious <br />
+              Dinners
+            </span>
+            <span className="text-white  text-center mt-2 text-sm leading-relaxed md:text-right md:text-lg">
+              <p className="md:hidden">
+                Our restaurant nests itself in this magical and hidden gem of
+                South Goa, “Tanggies” perfectly captures what we are all about
+                and awhat our restauarnt believes in. No one can survive this
+                life by just being sweet, you have to be spicy at times and a
+                bit tangy at times as well to make it through!
+              </p>
+              <p className="hidden md:block">
+                Our restaurant nests itself in this magical and hidden gem of
+                <br />
+                South Goa, “Tanggies” perfectly captures what we are all about
+                and
+                <br />
+                awhat our restauarnt believes in. No one can survive this life
+                by
+                <br />
+                just being sweet, you have to be spicy at times and a bit tangy
+                at
+                <br />
+                times as well to make it through!
+              </p>
+            </span>
+            <div className="flex mt-3">
+              <button className="px-3 py-2 bg-white rounded-sm text-black text-center text-md">
+                Book a Table
+              </button>
+              <button className="ml-4 px-2 py-2 rounded-sm text-white border-2 border-white text-center text-md">
+                Order a Take Out
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* About Us */}
-      <div className="p-4 flex flex-col items-center bg-off_white">
-        <img
-          className="rounded-lg"
-          src="/images/entrance.png"
-          alt=""
-          width="315 px"
-          height="320 px"
-        />
-        <span
-          className="block text-wood text-5xl uppercase text-center leading-10 mt-5"
-          style={{ fontWeight: 900 }}>
-          About Us
-        </span>
-        <span className="text-lighter_black text-center mt-2 px-3 text-sm leading-normal">
-          Settled in South Goa, overlooking the confluence of the Arabian sea
-          and the Sal River, Cavelossim harbors a few of the prettiest sights in
-          Goa. With the gorgeous white sands shimmering in the sun and the great
-          waves creahing against the golden shores, it is a beautiful sight to
-          witness. The calming hillocks in the distance, and the views of the
-          sunset add to its peaceful and relaxed charm.
-        </span>
-        <span className="text-lighter_black text-center mt-2 px-3 text-sm leading-normal">
-          Our restaurant has been through a few of its exciting changes in our
-          history. We began as a local bar called “Get Down” back in 1973. Yes,
-          we go way back. In fact, we were one of the very first local bars in
-          Mobor, Cavelossim. We also had the pleasure of being one of the first
-          restaurants to host and welcome tourists from around the world through
-          our doors
-        </span>
-        <span className="text-lighter_black text-center mt-2 px-3 text-sm leading-normal">
-          People came from far and wide to have a taste of this magical blend of
-          spices that had all the locals talking, which gave us no option but to
-          create the restaurant we are today.
-        </span>
+      <div className="py-4 bg-off_white">
+        <div className="w-11/12 mx-auto flex flex-col items-center  md:flex-row">
+          <img
+            className="rounded-lg w-80 md:w-96"
+            src="/images/entrance.png"
+            alt=""
+          />
+          <div className="flex flex-col items-center md:items-start md:px-4">
+            <span
+              className="block text-wood text-5xl uppercase text-center leading-10 mt-5 md:text-left title"
+              style={{ fontWeight: 900 }}>
+              About Us
+            </span>
+            <span className="text-lighter_black text-center mt-2 text-sm leading-normal md:text-left md:text-base">
+              Settled in South Goa, overlooking the confluence of the Arabian
+              sea and the Sal River, Cavelossim harbors a few of the prettiest
+              sights in Goa. With the gorgeous white sands shimmering in the sun
+              and the great waves creahing against the golden shores, it is a
+              beautiful sight to witness. The calming hillocks in the distance,
+              and the views of the sunset add to its peaceful and relaxed charm.
+            </span>
+            <span className="text-lighter_black text-center mt-2 text-sm leading-normal md:text-left md:text-base">
+              Our restaurant has been through a few of its exciting changes in
+              our history. We began as a local bar called “Get Down” back in
+              1973. Yes, we go way back. In fact, we were one of the very first
+              local bars in Mobor, Cavelossim. We also had the pleasure of being
+              one of the first restaurants to host and welcome tourists from
+              around the world through our doors
+            </span>
+            <span className="text-lighter_black text-center mt-2 text-sm leading-normal md:text-left md:text-base">
+              People came from far and wide to have a taste of this magical
+              blend of spices that had all the locals talking, which gave us no
+              option but to create the restaurant we are today.
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Private Dining */}
       <div className="p-4 flex flex-col items-center bg-night_blue">
-        <img
-          className="rounded-lg"
-          src="/images/tanggies_night.jpg"
-          alt=""
-          width="320 px"
-          height="300 px"
-        />
-        <span
-          className="block text-bluish_white text-5xl uppercase text-center leading-10 mt-5"
-          style={{ fontWeight: 900 }}>
-          Private
-          <br />
-          Dining
-        </span>
-        <span className="text-white text-center mt-2 px-3 text-sm leading-normal">
-          These days, restaurants have private spaces within their prmise itself
-          that allow to dine privately from the rest of the restaurant with
-          guests that have been invited by that party only. You have the choice
-          to tailor these private dining rooms to your needs and design! Its can
-          be for a particular occasion with a specific theme and defined
-          cuisine.
-        </span>
-        <span className="text-white text-center mt-2 px-3 text-sm leading-normal">
-          Whatever it is, it can be done privately with guests that you choose
-          to invite - a little world of your own within paradisee. Tanggies has
-          been rebranded and renovated, as mentioned which has allowed us to
-          create a niche just for you ad your friends!
-        </span>
-        <span className="text-white text-center mt-2 px-3 text-sm leading-normal">
-          When a custom setting is needed, or a little more privacy is required,
-          private dining can come to your aid. Or even when you need something
-          which is a bit different to switch it up from what you usually do!
-        </span>
-        <span className="text-white text-center mt-2 px-3 text-sm leading-normal">
-          South Goa invites you to explore all that Cavelossim offers and to
-          discover the magic of Tanggies and Silver Waves Shack!
-        </span>
+        <div className="w-11/12 mx-auto flex flex-col items-center  md:flex-row-reverse">
+          <img
+            className="rounded-lg w-80 md:w-96 md:h-96"
+            src="/images/tanggies_night.jpg"
+            alt=""
+          />
+          <div className="flex flex-col items-center text-center text-sm md:px-4 md:text-right md:items-end md:text-base">
+            <span
+              className="block text-bluish_white text-5xl uppercase leading-10 mt-5"
+              style={{ fontWeight: 900 }}>
+              Private
+              <br />
+              Dining
+            </span>
+            <span className="text-white mt-2 leading-normal">
+              These days, restaurants have private spaces within their prmise
+              itself that allow to dine privately from the rest of the
+              restaurant with guests that have been invited by that party only.
+              You have the choice to tailor these private dining rooms to your
+              needs and design! Its can be for a particular occasion with a
+              specific theme and defined cuisine.
+            </span>
+            <span className="text-white mt-2 leading-normal">
+              Whatever it is, it can be done privately with guests that you
+              choose to invite - a little world of your own within paradisee.
+              Tanggies has been rebranded and renovated, as mentioned which has
+              allowed us to create a niche just for you ad your friends!
+            </span>
+            <span className="text-white mt-2 leading-normal">
+              When a custom setting is needed, or a little more privacy is
+              required, private dining can come to your aid. Or even when you
+              need something which is a bit different to switch it up from what
+              you usually do!
+            </span>
+            <span className="text-white mt-2 leading-normal">
+              South Goa invites you to explore all that Cavelossim offers and to
+              discover the magic of Tanggies and Silver Waves Shack!
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Beach Shack */}
-      <div className="p-4 flex flex-col items-center bg-sand">
-        <img
-          className="rounded-lg"
-          src="/images/beach_shack.jpg"
-          alt=""
-          width="320 px"
-          height="310 px"
-        />
-        <span
-          className="block text-brownish_black text-5xl uppercase text-center leading-10 mt-5"
-          style={{ fontWeight: 900 }}>
-          Beach
-          <br />
-          Shack
-        </span>
-        <span
-          className="text-black text-center mt-2 px-3 text-xl"
-          style={{ fontWeight: 500 }}>
-          The "Silver Waves" of Mobor!
-        </span>
-        <span className="text-lighter_black text-center mt-2 px-3 text-sm leading-normal">
-          We first opened the shack in the early 1990s when tourists came to the
-          area to stay in the local hotels and immerse themselves in the culture
-          of South Goa. It’s a seasonal beach café that also serves
-          multi-cuisine dishes, including Goan, Indian, and Indo-Chinese food.
-          One of the favourites cuisine is the fresh local seafood that will
-          want you to stay in South Goa forever.
-        </span>
-        <span className="text-lighter_black text-center mt-2 px-3 text-sm leading-normal">
-          Serene, tranquil, and beautiful. Mobor beach. A long and beautiful
-          stretch of sand, lined with casuarina and palm trees and surrounded by
-          water on three sides. A little slice of heaven to go with delicious
-          seafood at our sister café, the Silver Waves Beach Shack, which
-          operates from November through April.
-        </span>
-        <span className="text-lighter_black text-center mt-2 px-3 text-sm leading-normal">
-          It is the place for relaxation and privacy. A cosmopolitan or a
-          margarita, you can choose your poison as you take in the beauty of the
-          white sand and glow of the shore from the shack. The fireworks light
-          up the sky at night once the sun sets, there’s always something to
-          admire from here.
-        </span>
+      <div className="p-4 bg-sand">
+        <div className="w-11/12 mx-auto flex flex-col items-center md:flex-row">
+          <img
+            className="rounded-lg w-80 md:w-96 md:h-96"
+            src="/images/beach_shack.jpg"
+            alt=""
+          />
+          <div className="flex flex-col items-center text-center text-sm md:text-left md:items-start md:px-4 md:text-base">
+            <span
+              className="text-brownish_black text-5xl uppercase leading-10 mt-5"
+              style={{ fontWeight: 900 }}>
+              Beach
+              <br />
+              Shack
+            </span>
+            <span
+              className="text-black mt-2 text-xl"
+              style={{ fontWeight: 500 }}>
+              The "Silver Waves" of Mobor!
+            </span>
+            <span className="text-lighter_black mt-2 leading-normal">
+              We first opened the shack in the early 1990s when tourists came to
+              the area to stay in the local hotels and immerse themselves in the
+              culture of South Goa. It’s a seasonal beach café that also serves
+              multi-cuisine dishes, including Goan, Indian, and Indo-Chinese
+              food. One of the favourites cuisine is the fresh local seafood
+              that will want you to stay in South Goa forever.
+            </span>
+            <span className="text-lighter_black mt-2 leading-normal">
+              Serene, tranquil, and beautiful. Mobor beach. A long and beautiful
+              stretch of sand, lined with casuarina and palm trees and
+              surrounded by water on three sides. A little slice of heaven to go
+              with delicious seafood at our sister café, the Silver Waves Beach
+              Shack, which operates from November through April.
+            </span>
+            <span className="text-lighter_black mt-2 leading-normal">
+              It is the place for relaxation and privacy. A cosmopolitan or a
+              margarita, you can choose your poison as you take in the beauty of
+              the white sand and glow of the shore from the shack. The fireworks
+              light up the sky at night once the sun sets, there’s always
+              something to admire from here.
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Contact */}
-      <div className="p-4 flex flex-col items-center bg-cyan">
-        <Contact />
-        <div className="mt-4">
-          <ContactForm />
+      <div className="p-4 bg-cyan">
+        <div className="w-11/12 mx-auto flex flex-col items-center md:flex-row md:justify-center">
+          <Contact />
+          <div className="mt-4 md:mt-0 md:ml-4">
+            <ContactForm />
+          </div>
         </div>
       </div>
 
