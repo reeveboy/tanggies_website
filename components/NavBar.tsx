@@ -3,6 +3,37 @@ import { Transition } from "@headlessui/react";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const goToHome = () => {
+    document
+      .getElementById("home")
+      .scrollIntoView({ behavior: "smooth", block: "end" });
+  };
+
+  const goToAbout = () => {
+    document.getElementById("about_us").scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+    });
+  };
+
+  const goToPrivate = () => {
+    document
+      .getElementById("private_dining")
+      .scrollIntoView({ behavior: "smooth", block: "end" });
+  };
+
+  const goToBeachCafe = () => {
+    document
+      .getElementById("beach_shack")
+      .scrollIntoView({ behavior: "smooth", block: "end" });
+  };
+
+  const goToContact = () => {
+    document
+      .getElementById("contact")
+      .scrollIntoView({ behavior: "smooth", block: "end" });
+  };
   return (
     <div className="sticky top-0">
       <nav className="bg-white">
@@ -12,19 +43,19 @@ function NavBar() {
             style={{ fontWeight: 500 }}>
             <div className="flex items-center justify-between w-11/12">
               <a
-                href="#"
+                onClick={goToHome}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Home
               </a>
 
               <a
-                href="#"
+                onClick={goToAbout}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 About Us
               </a>
 
               <a
-                href="#"
+                onClick={goToPrivate}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Private Dining
               </a>
@@ -38,7 +69,7 @@ function NavBar() {
                 />
               </div>
               <a
-                href="#"
+                onClick={goToBeachCafe}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Beach Café
               </a>
@@ -50,7 +81,7 @@ function NavBar() {
               </a>
 
               <a
-                href="#"
+                onClick={goToContact}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Contact
               </a>
@@ -111,25 +142,25 @@ function NavBar() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="#"
+                  onClick={goToHome}
                   className="hover:bg-gray-700 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Home
                 </a>
 
                 <a
-                  href="#"
+                  onClick={goToAbout}
                   className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   About Us
                 </a>
 
                 <a
-                  href="#"
+                  onClick={goToPrivate}
                   className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Private Dining
                 </a>
 
                 <a
-                  href="#"
+                  onClick={goToBeachCafe}
                   className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Beach Café
                 </a>
@@ -141,7 +172,7 @@ function NavBar() {
                 </a>
 
                 <a
-                  href="#"
+                  onClick={goToContact}
                   className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Contact
                 </a>
