@@ -1,18 +1,20 @@
 import Contact from "../components/Contact";
 import ContactForm from "../components/ContactForm";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (
     <div className="">
+      <NavBar />
       {/* Home */}
-      <div className="py-4 bg-tile_gray">
-        <div className="w-11/12 mx-auto flex flex-col items-center  md:flex-row-reverse">
+      <div className="py-8 bg-tile_gray ">
+        <div className="w-11/12 mx-auto flex flex-col items-center justify-center  md:flex-row-reverse">
           <img
-            className="rounded-lg w-72 md:w-96"
+            className="rounded-lg max-w-xs md:w-96 md:max-w-md"
             src="/images/steak.jpg"
             alt=""
           />
-          <div className="flex flex-col items-center md:items-end md:ml-10 md:pr-4">
+          <div className="flex flex-col items-center md:items-end md:ml-10 md:pr-4 md:max-w-sm">
             <span
               className="block text-sand_stone text-5xl uppercase text-center leading-10 mt-5 md:text-right title"
               style={{ fontWeight: 900 }}>
@@ -20,33 +22,17 @@ export default function Home() {
               Dinners
             </span>
             <span className="text-white  text-center mt-2 text-sm leading-relaxed md:text-right md:text-lg">
-              <p className="md:hidden">
-                Our restaurant nests itself in this magical and hidden gem of
-                South Goa, “Tanggies” perfectly captures what we are all about
-                and awhat our restauarnt believes in. No one can survive this
-                life by just being sweet, you have to be spicy at times and a
-                bit tangy at times as well to make it through!
-              </p>
-              <p className="hidden md:block">
-                Our restaurant nests itself in this magical and hidden gem of
-                <br />
-                South Goa, “Tanggies” perfectly captures what we are all about
-                and
-                <br />
-                awhat our restauarnt believes in. No one can survive this life
-                by
-                <br />
-                just being sweet, you have to be spicy at times and a bit tangy
-                at
-                <br />
-                times as well to make it through!
-              </p>
+              Our restaurant nests itself in this magical and hidden gem of
+              South Goa, “Tanggies” perfectly captures what we are all about and
+              awhat our restauarnt believes in. No one can survive this life by
+              just being sweet, you have to be spicy at times and a bit tangy at
+              times as well to make it through!
             </span>
             <div className="flex mt-3">
-              <button className="px-3 py-2 bg-white rounded-sm text-black text-center text-md">
+              <button className="px-3 py-2 bg-white rounded-sm text-black text-center hover:scale-105 transition-all">
                 Book a Table
               </button>
-              <button className="ml-4 px-2 py-2 rounded-sm text-white border-2 border-white text-center text-md">
+              <button className="ml-4 px-2 py-2 rounded-sm text-white border-2 border-white text-center hover:scale-105 transition-all">
                 Order a Take Out
               </button>
             </div>
@@ -55,14 +41,14 @@ export default function Home() {
       </div>
 
       {/* About Us */}
-      <div className="py-4 bg-off_white">
-        <div className="w-11/12 mx-auto flex flex-col items-center  md:flex-row">
+      <div className="py-8 bg-off_white">
+        <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row">
           <img
-            className="rounded-lg w-80 md:w-96"
+            className="rounded-lg max-w-xs lg:max-w-sm"
             src="/images/entrance.png"
             alt=""
           />
-          <div className="flex flex-col items-center md:items-start md:px-4">
+          <div className="flex flex-col items-center md:items-start md:px-4 md:max-w-3xl">
             <span
               className="block text-wood text-5xl uppercase text-center leading-10 mt-5 md:text-left title"
               style={{ fontWeight: 900 }}>
@@ -94,16 +80,16 @@ export default function Home() {
       </div>
 
       {/* Private Dining */}
-      <div className="p-4 flex flex-col items-center bg-night_blue">
-        <div className="w-11/12 mx-auto flex flex-col items-center  md:flex-row-reverse">
+      <div className="p-8 bg-night_blue ">
+        <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row-reverse">
           <img
-            className="rounded-lg w-80 md:w-96 md:h-96"
+            className="rounded-lg max-w-xs lg:max-w-sm lg:max-h-sm"
             src="/images/tanggies_night.jpg"
             alt=""
           />
-          <div className="flex flex-col items-center text-center text-sm md:px-4 md:text-right md:items-end md:text-base">
+          <div className="flex flex-col items-center text-center font-light text-sm md:px-4 md:text-right md:items-end md:text-base md:max-w-3xl">
             <span
-              className="block text-bluish_white text-5xl uppercase leading-10 mt-5"
+              className="block text-bluish_white text-5xl uppercase leading-10 mt-5 md:mt-0 font-black"
               style={{ fontWeight: 900 }}>
               Private
               <br />
@@ -138,16 +124,16 @@ export default function Home() {
       </div>
 
       {/* Beach Shack */}
-      <div className="p-4 bg-sand">
-        <div className="w-11/12 mx-auto flex flex-col items-center md:flex-row">
+      <div className="p-8 bg-sand ">
+        <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row">
           <img
-            className="rounded-lg w-80 md:w-96 md:h-96"
+            className="rounded-lg max-w-xs lg:max-w-sm lg:max-h-sm"
             src="/images/beach_shack.jpg"
             alt=""
           />
-          <div className="flex flex-col items-center text-center text-sm md:text-left md:items-start md:px-4 md:text-base">
+          <div className="flex flex-col items-center text-center text-sm md:text-left md:items-start md:px-4 md:text-base md:max-w-3xl">
             <span
-              className="text-brownish_black text-5xl uppercase leading-10 mt-5"
+              className="text-brownish_black text-5xl uppercase leading-10 mt-5 md:mt-0"
               style={{ fontWeight: 900 }}>
               Beach
               <br />
@@ -185,7 +171,7 @@ export default function Home() {
       </div>
 
       {/* Contact */}
-      <div className="p-4 bg-cyan">
+      <div className="p-8 bg-cyan ">
         <div className="w-11/12 mx-auto flex flex-col items-center md:flex-row md:justify-center">
           <Contact />
           <div className="mt-4 md:mt-0 md:ml-4">

@@ -16,7 +16,9 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Head>
-      <div className="">{children}</div>
+      <div className="" style={{ minWidth: "390px" }}>
+        {children}
+      </div>
     </>
   );
 };

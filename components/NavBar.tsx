@@ -4,30 +4,31 @@ import { Transition } from "@headlessui/react";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <div className="sticky top-0">
       <nav className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 md:px-0">
           <div
-            className="flex items-center justify-between md:justify-center h-16 uppercase"
+            className="flex items-center justify-between md:justify-center h-14 uppercase"
             style={{ fontWeight: 500 }}>
-            <div className="flex items-center">
+            <div className="flex items-center justify-between w-11/12">
               <a
                 href="#"
-                className="m-2 lg:m-7 hidden md:block text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Home
               </a>
 
               <a
                 href="#"
-                className="m-2 lg:m-7 hidden md:block text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 About Us
               </a>
 
               <a
                 href="#"
-                className="m-2 lg:m-7 hidden md:block text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Private Dining
               </a>
+
               <div className="flex-shrink-0">
                 <img
                   height="48 px"
@@ -38,19 +39,19 @@ function NavBar() {
               </div>
               <a
                 href="#"
-                className="m-2 lg:m-7 hidden md:block text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Beach Café
               </a>
 
               <a
                 href="#"
-                className="m-2 lg:m-7 hidden md:block text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Menu
               </a>
 
               <a
                 href="#"
-                className="m-2 lg:m-7 hidden md:block text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Contact
               </a>
             </div>
@@ -58,7 +59,7 @@ function NavBar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 inline-flex items-center justify-center p-1 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false">
                 <span className="sr-only">Open main menu</span>
