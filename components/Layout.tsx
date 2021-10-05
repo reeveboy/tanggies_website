@@ -5,6 +5,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
+        <title>Tanggies Goa</title>
+        <meta property="og:title" content="My page title" key="title" />
+
+        <link rel="shortcut icon" href="/images/Tree.png" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

@@ -14,8 +14,8 @@ export default function Home() {
         <div className="w-11/12 mx-auto flex flex-col items-center justify-center  md:flex-row-reverse">
           <img
             className="rounded-lg max-w-xs md:w-96 md:max-w-md"
-            src="/images/steak.jpg"
-            alt=""
+            src="https://i.imgur.com/qu0Vu2x.jpg"
+            alt="Yummy Steak"
           />
           <div className="flex flex-col items-center md:items-end md:ml-10 md:pr-4 md:max-w-sm">
             <span
@@ -52,8 +52,8 @@ export default function Home() {
         <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row">
           <img
             className="rounded-lg max-w-xs lg:max-w-sm"
-            src="/images/entrance.png"
-            alt=""
+            src="https://i.imgur.com/JhOM23x.png"
+            alt="Tanggies Entrance"
           />
           <div className="flex flex-col items-center md:items-start md:px-4 md:max-w-3xl">
             <span
@@ -91,8 +91,8 @@ export default function Home() {
         <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row-reverse">
           <img
             className="rounded-lg max-w-xs lg:max-w-sm lg:max-h-sm"
-            src="/images/tanggies_night.jpg"
-            alt=""
+            src="https://i.imgur.com/FpIBZ5C.jpg"
+            alt="Tanggies at Night"
           />
           <div className="flex flex-col items-center text-center font-light text-sm md:px-4 md:text-right md:items-end md:text-base md:max-w-3xl">
             <span
@@ -135,8 +135,8 @@ export default function Home() {
         <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row">
           <img
             className="rounded-lg max-w-xs lg:max-w-sm lg:max-h-sm"
-            src="/images/beach_shack.jpg"
-            alt=""
+            src="https://i.imgur.com/h33brY7.jpg"
+            alt="Silver Waves Beach Shack"
           />
           <div className="flex flex-col items-center text-center text-sm md:text-left md:items-start md:px-4 md:text-base md:max-w-3xl">
             <span

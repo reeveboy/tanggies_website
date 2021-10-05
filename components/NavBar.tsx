@@ -32,7 +32,7 @@ function NavBar() {
   const goToContact = () => {
     document
       .getElementById("contact")
-      .scrollIntoView({ behavior: "smooth", block: "end" });
+      .scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (
     <div className="sticky top-0">
@@ -44,18 +44,21 @@ function NavBar() {
             <div className="flex items-center justify-between w-11/12">
               <a
                 onClick={goToHome}
+                style={{ cursor: "pointer" }}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Home
               </a>
 
               <a
                 onClick={goToAbout}
+                style={{ cursor: "pointer" }}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 About Us
               </a>
 
               <a
                 onClick={goToPrivate}
+                style={{ cursor: "pointer" }}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Private Dining
               </a>
@@ -70,18 +73,20 @@ function NavBar() {
               </div>
               <a
                 onClick={goToBeachCafe}
+                style={{ cursor: "pointer" }}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Beach Café
               </a>
 
               <a
-                href="#"
+                style={{ cursor: "pointer" }}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Menu
               </a>
 
               <a
                 onClick={goToContact}
+                style={{ cursor: "pointer" }}
                 className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                 Contact
               </a>
@@ -165,9 +170,7 @@ function NavBar() {
                   Beach Café
                 </a>
 
-                <a
-                  href="#"
-                  className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                <a className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Menu
                 </a>
 
