@@ -42,27 +42,6 @@ function NavBar() {
             className="flex items-center justify-between md:justify-center h-14 uppercase"
             style={{ fontWeight: 500 }}>
             <div className="flex items-center justify-between w-11/12">
-              <a
-                onClick={goToHome}
-                style={{ cursor: "pointer" }}
-                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
-                Home
-              </a>
-
-              <a
-                onClick={goToAbout}
-                style={{ cursor: "pointer" }}
-                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
-                About Us
-              </a>
-
-              <a
-                onClick={goToPrivate}
-                style={{ cursor: "pointer" }}
-                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
-                Private Dining
-              </a>
-
               <div className="flex-shrink-0">
                 <img
                   height="48 px"
@@ -71,25 +50,42 @@ function NavBar() {
                   alt="Logo"
                 />
               </div>
-              <a
-                onClick={goToBeachCafe}
-                style={{ cursor: "pointer" }}
-                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
-                Beach Café
-              </a>
+              <div className="flex items-center">
+                <a
+                  onClick={goToHome}
+                  style={{ cursor: "pointer" }}
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  Home
+                </a>
 
-              <a
-                style={{ cursor: "pointer" }}
-                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
-                Menu
-              </a>
+                <a
+                  onClick={goToAbout}
+                  style={{ cursor: "pointer" }}
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  About Us
+                </a>
 
-              <a
-                onClick={goToContact}
-                style={{ cursor: "pointer" }}
-                className="m-2 lg:m-7 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
-                Contact
-              </a>
+                <a
+                  onClick={goToPrivate}
+                  style={{ cursor: "pointer" }}
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  Private Dining
+                </a>
+
+                <a
+                  onClick={goToBeachCafe}
+                  style={{ cursor: "pointer" }}
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  Beach Café
+                </a>
+
+                <a
+                  onClick={goToContact}
+                  style={{ cursor: "pointer" }}
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  Contact
+                </a>
+              </div>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
@@ -168,10 +164,6 @@ function NavBar() {
                   onClick={goToBeachCafe}
                   className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Beach Café
-                </a>
-
-                <a className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                  Menu
                 </a>
 
                 <a
