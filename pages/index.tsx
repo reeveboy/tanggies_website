@@ -13,7 +13,7 @@ export default function Home() {
       <div id="home" className="py-8 bg-tile_gray ">
         <div className="w-11/12 mx-auto flex flex-col items-center justify-center  md:flex-row-reverse">
           <img
-            className="rounded-lg max-w-xs md:w-96 md:max-w-md"
+            className="object-cover rounded-lg max-w-xs md:w-96 md:max-w-md"
             src="https://i.imgur.com/qu0Vu2x.jpg"
             alt="Yummy Steak"
           />
@@ -51,7 +51,7 @@ export default function Home() {
       <div id="about_us" className="py-8 bg-off_white">
         <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row">
           <img
-            className="rounded-lg max-w-xs lg:max-w-sm"
+            className="object-cover rounded-lg max-w-xs lg:max-w-sm"
             src="https://i.imgur.com/JhOM23x.png"
             alt="Tanggies Entrance"
           />
@@ -90,7 +90,7 @@ export default function Home() {
       <div id="private_dining" className="p-8 bg-night_blue ">
         <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row-reverse">
           <img
-            className="rounded-lg max-w-xs lg:max-w-sm lg:max-h-sm"
+            className="object-cover rounded-lg max-w-xs lg:max-w-sm md:h-96 lg:max-h-96"
             src="https://i.imgur.com/FpIBZ5C.jpg"
             alt="Tanggies at Night"
           />
@@ -134,7 +134,7 @@ export default function Home() {
       <div id="beach_shack" className="p-8 bg-sand ">
         <div className="w-11/12 mx-auto flex flex-col items-center justify-center md:flex-row">
           <img
-            className="rounded-lg max-w-xs lg:max-w-sm lg:max-h-sm"
+            className="object-cover rounded-lg max-w-xs lg:max-w-sm md:h-96 lg:max-h-96"
             src="https://i.imgur.com/h33brY7.jpg"
             alt="Silver Waves Beach Shack"
           />
