@@ -18,12 +18,12 @@ export default function Home() {
             alt="Yummy Steak"
           />
           <div className="flex flex-col items-center md:items-end md:ml-10 md:pr-4 md:max-w-sm">
-            <span
+            <h1
               className="block text-sand_stone text-5xl uppercase text-center leading-10 mt-5 md:text-right title"
               style={{ fontWeight: 900 }}>
               Delicious <br />
               Dinners
-            </span>
+            </h1>
             <span className="text-white  text-center mt-2 text-sm leading-relaxed md:text-right md:text-lg">
               Our restaurant nests itself in this magical and hidden gem of
               South Goa, “Tanggies” perfectly captures what we are all about and
@@ -56,11 +56,11 @@ export default function Home() {
             alt="Tanggies Entrance"
           />
           <div className="flex flex-col items-center md:items-start md:px-4 md:max-w-3xl">
-            <span
+            <h1
               className="block text-wood text-5xl uppercase text-center leading-10 mt-5 md:text-left title"
               style={{ fontWeight: 900 }}>
               About Us
-            </span>
+            </h1>
             <span className="text-lighter_black text-center mt-2 text-sm leading-normal md:text-left md:text-base">
               Settled in South Goa, overlooking the confluence of the Arabian
               sea and the Sal River, Cavelossim harbors a few of the prettiest
@@ -95,13 +95,13 @@ export default function Home() {
             alt="Tanggies at Night"
           />
           <div className="flex flex-col items-center text-center font-light text-sm md:px-4 md:text-right md:items-end md:text-base md:max-w-3xl">
-            <span
+            <h1
               className="block text-bluish_white text-5xl uppercase leading-10 mt-5 md:mt-0 font-black"
               style={{ fontWeight: 900 }}>
               Private
               <br />
               Dining
-            </span>
+            </h1>
             <span className="text-white mt-2 leading-normal">
               These days, restaurants have private spaces within their prmise
               itself that allow to dine privately from the rest of the
@@ -139,13 +139,13 @@ export default function Home() {
             alt="Silver Waves Beach Shack"
           />
           <div className="flex flex-col items-center text-center text-sm md:text-left md:items-start md:px-4 md:text-base md:max-w-3xl">
-            <span
+            <h1
               className="text-brownish_black text-5xl uppercase leading-10 mt-5 md:mt-0"
               style={{ fontWeight: 900 }}>
               Beach
               <br />
               Shack
-            </span>
+            </h1>
             <span
               className="text-black mt-2 text-xl"
               style={{ fontWeight: 500 }}>

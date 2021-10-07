@@ -6,7 +6,19 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>Tanggies Goa</title>
-        <meta property="og:title" content="My page title" key="title" />
+        <meta
+          property="og:title"
+          content="Tanggies Restaurant - Best Food Served in South Goa"
+          key="title"
+        />
+        <meta
+          name="description"
+          content="Tanngies Restaurant is settled in South Goa overlooking the confluence of the Arabian
+              sea and the Sal River, Cavelossim harbors a few of the prettiest
+              sights in Goa. People came from far and wide to have a taste of this magical
+              blend of spices that had all the locals talking, which gave us no
+              option but to create the restaurant we are today."
+        />
 
         <link rel="shortcut icon" href="/images/Tree.png" />
 

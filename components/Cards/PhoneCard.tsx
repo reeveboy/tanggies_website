@@ -15,14 +15,14 @@ const Card = () => {
         </div>
       </div>
       <div className="flex flex-col px-1 justify-center w-4/5">
-        <span
+        <h1
           className="uppercase text-brown text-lg md:text-2xl"
           style={{ fontWeight: 900 }}>
           Quick Contact
-        </span>
+        </h1>
         <span className=" font-light text-tiny leading-tight md:text-sm">
           +918806296994 – +919822384178 <br />
-          info@tanggiesgoa.com
+          <a href="mailto:info@tanggiesgoa.com">info@tanggiesgoa.com</a>
         </span>
       </div>
     </div>
