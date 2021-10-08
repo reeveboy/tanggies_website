@@ -4,7 +4,7 @@ const Card = () => {
   return (
     <div className="p-2 border shadow-md rounded-lg flex">
       <div className="w-1/5 flex items-center justify-center">
-        <div className="rounded-full bg-cyan h-9 w-9 md:h-12 md:w-12 flex justify-center items-center text-white">
+        <div className="rounded-full bg-night_blue h-9 w-9 md:h-12 md:w-12 flex justify-center items-center text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -17,7 +17,7 @@ const Card = () => {
       </div>
       <div className="flex flex-col px-1 justify-center w-4/5">
         <h1
-          className="uppercase text-brown  text-lg md:text-xl md:leading-5"
+          className="uppercase text-night_blue  text-lg md:text-xl md:leading-5"
           style={{ fontWeight: 900 }}>
           Hours Of Operation
         </h1>

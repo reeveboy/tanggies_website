@@ -12,10 +12,16 @@ module.exports = {
       cyan: "#2BB3C3",
       new_yellow: "#FFC32A",
       nice_pink: "#F18AA5",
+      newer_yellow: "#FFE694",
+      new_blue: "#6176C3",
+      dark_blue: "#121B3F",
+      our_history: "#96E4E7",
+      contact: "#F8F9FF",
     }),
 
     textColor: (theme) => ({
       ...theme("colors"),
+      night_blue: "#2C3863",
       sand_stone: "#D6C7B8",
       wood: "#4E4242",
       lighter_black: "#202020",
@@ -23,6 +29,9 @@ module.exports = {
       brownish_black: "#302B1D",
       brown: "#786A6A",
       cyan: "#2BB3C3",
+      darker_yellow: "#FDC81A",
+      new_blue: "#6176C3",
+      dark_blue: "#5769AB",
     }),
 
     fontSize: (theme) => ({

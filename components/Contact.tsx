@@ -5,8 +5,8 @@ import ClockCard from "./Cards/ClockCard";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col bg-white w-80 rounded-lg md:min-w-96 md:min-h-96 md:w-96">
-      <div className="flex justify-center items-center bg-new_yellow rounded-t-lg p-2">
+    <div className="flex flex-col bg-white w-80 rounded-lg md:min-w-96 md:min-h-96 md:w-96 shadow-md">
+      <div className="flex justify-center items-center bg-night_blue rounded-t-lg p-2">
         <div className="rounded-full bg-white w-12 h-12 flex justify-center items-center">
           <img
             src="/svgs/contact.svg"

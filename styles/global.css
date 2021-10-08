@@ -36,3 +36,9 @@ a {
     line-height: 80%;
   }
 }
+
+@media (min-width: 768px) {
+  .twenty-six-h {
+    height: 28rem;
+  }
+}

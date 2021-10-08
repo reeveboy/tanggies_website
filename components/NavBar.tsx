@@ -17,6 +17,13 @@ function NavBar() {
     });
   };
 
+  const goToHistory = () => {
+    document.getElementById("our_history").scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+    });
+  };
+
   const goToPrivate = () => {
     document
       .getElementById("private_dining")
@@ -50,39 +57,46 @@ function NavBar() {
                   alt="Logo"
                 />
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center text-xs lg:text-sm">
                 <a
                   onClick={goToHome}
                   style={{ cursor: "pointer" }}
-                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                   Home
                 </a>
 
                 <a
                   onClick={goToAbout}
                   style={{ cursor: "pointer" }}
-                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                   About Us
+                </a>
+
+                <a
+                  onClick={goToHistory}
+                  style={{ cursor: "pointer" }}
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  Our History
                 </a>
 
                 <a
                   onClick={goToPrivate}
                   style={{ cursor: "pointer" }}
-                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                   Private Dining
                 </a>
 
                 <a
                   onClick={goToBeachCafe}
                   style={{ cursor: "pointer" }}
-                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                   Beach Café
                 </a>
 
                 <a
                   onClick={goToContact}
                   style={{ cursor: "pointer" }}
-                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 text-sm border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
+                  className="m-2 lg:m-6 hidden md:block text-black px-3 py-2 border-opacity-0 hover:border-opacity-100 hover:border-b-4 hover:border-black hover:scale-105 transition-all">
                   Contact
                 </a>
               </div>
@@ -152,6 +166,12 @@ function NavBar() {
                   onClick={goToAbout}
                   className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   About Us
+                </a>
+
+                <a
+                  onClick={goToHistory}
+                  className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                  Our History
                 </a>
 
                 <a
