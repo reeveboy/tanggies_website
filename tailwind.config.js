@@ -15,7 +15,7 @@ module.exports = {
       newer_yellow: "#FFE694",
       new_blue: "#6176C3",
       dark_blue: "#121B3F",
-      our_history: "#96E4E7",
+      our_history: "#EFF4FF",
       contact: "#F8F9FF",
     }),
 
